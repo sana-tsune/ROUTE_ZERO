@@ -61,7 +61,7 @@
             </div>
             <!--end div.snsicon-->
             <div class="mainlogo">
-                <a href="index_top.html">
+                <a href="index.html">
                     <img src="images/logo.png" alt="ROUTE ZERO"></a>
             </div>
             <!--end div.mainlogo-->
@@ -74,7 +74,7 @@
             <nav class="navmenu_bottom">
                 <ul>
                     <li class="top">
-                        <a href="index_top.html">routezero_navitop</a>
+                        <a href="index.html">routezero_navitop</a>
                     </li>
                     <li class="navicon concept">
                         <a href="concept.html">routezero_concept</a>
@@ -117,7 +117,7 @@
                         <h1>03-6264-7004</h1>
                         <h2>TABI×DINING ROUTE ZERO<br>オーナー　北中<br></h2>
                         <h3><br><br>
-                            <a href="index_top.html">
+                            <a href="index.html">
               トップページに戻る</a>
                         </h3>
                     </div>

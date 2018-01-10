@@ -2,73 +2,748 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
-  <title>旅×ﾀﾞｲﾆﾝｸﾞ ﾙｰﾄｾﾞﾛ</title>
-  <meta name="description" content="世界一周から帰ってきたオーナーがお届けする、国際色豊かなダイニングバー。東銀座・銀座駅より徒歩５分圏内。1頭買い国産ブランド牛、漁師直送広島産カキ、契約農家直送エロうま無農薬野菜、日米のクラフトビール＆世界各国から取り揃えた豊富なお酒と共に、味覚の旅へお連れいたします。">
-  <meta property="og:title" content="旅×ﾀﾞｲﾆﾝｸﾞ ﾙｰﾄｾﾞﾛ">
+    <meta charset="utf-8">
+    <title>旅×ﾀﾞｲﾆﾝｸﾞ ﾙｰﾄｾﾞﾛ</title>
+    <meta name="description" content="世界一周から帰ってきたオーナーがお届けする、国際色豊かなダイニングバー。東銀座・銀座駅より徒歩５分圏内。1頭買い国産ブランド牛、漁師直送広島産カキ、契約農家直送エロうま無農薬野菜、日米のクラフトビール＆世界各国から取り揃えた豊富なお酒と共に、味覚の旅へお連れいたします。">
+    <meta property="og:title" content="旅×ﾀﾞｲﾆﾝｸﾞ ﾙｰﾄｾﾞﾛ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://sanae-tsunemi.sub.jp/ROUTE_ZERO/">
 <meta property="og:image" content="http://sanae-tsunemi.sub.jp/ROUTE_ZERO/images/ogp_logo.jpg">
 <meta property="fb:app_id" content="505645306459895">
 <meta property="og:description" content="世界一周から帰ってきたオーナーがお届けする、国際色豊かなダイニングバー。東銀座・銀座駅より徒歩５分圏内。1頭買い国産ブランド牛、漁師直送広島産カキ、契約農家直送エロうま無農薬野菜、日米のクラフトビール＆世界各国から取り揃えた豊富なお酒と共に、味覚の旅へお連れいたします。">
-  <link rel="shortcut icon" href="other/favicon.ico">
-  <script type="text/javascript" src="other/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="other/favicon.ico">
+    <script type="text/javascript" src="other/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="slider_pro/dist/css/slider-pro.min.css">
+    <script src="slider_pro/dist/js/jquery.sliderPro.min.js"></script>
+    <link href="lightbox2/css/lightbox.min.css" rel="stylesheet">
+    <script src="lightbox2/js/lightbox.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="nav_menu/jquery.fs.naver.css">
+    <script src="nav_menu/jquery.fs.naver.js"></script>
+    <!--nav固定-->
+    <script>
+        $(document).ready(function($) {
+            var tab = $('.navmenu'),
+                offset = tab.offset();
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    tab.addClass('fixed');
+                } else {
+                    tab.removeClass('fixed');
+                }
+            });
+        });
 
-  <style>
-    #start {
-      background-color: white;
-    }
-    
-    .start {
-      width: 85%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .start img {
-      width: 100%;
-      height: auto;
-    }
-    
-    footer {
-      text-align: center;
-    }
-  </style>
-  <script type="text/javascript">
-    waitTimer = 8;
-    url = "index_top.html";
+    </script>
+    <!--slider_pro1-->
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('#my-slider').sliderPro({
+                width: 300,
+                height: 200,
+                arrows: true,
+                buttons: true,
+                slideDistance: 5,
+                visibleSize: '100%',
+            });
+        });
 
-    function jumpPage() {
-      location.href = url;
-    }
-    setTimeout("jumpPage()", waitTimer * 1000)
-  </script>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    </script>
+    <!--slider_pro2-->
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('#my-slider2').sliderPro({
+                width: 300,
+                height: 200,
+                arrows: true,
+                buttons: true,
+                slideDistance: 5,
+                visibleSize: '100%',
+            });
+        });
 
-    ga('create', 'UA-101885271-3', 'auto');
-    ga('send', 'pageview');
-  </script>
+    </script>
+    <!--slider_pro3-->
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('#my-slider3').sliderPro({
+                width: 300,
+                height: 200,
+                arrows: true,
+                buttons: true,
+                slideDistance: 5,
+                visibleSize: '100%',
+            });
+        });
+
+    </script>
+    <!--slider_pro4-->
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('#my-slider4').sliderPro({
+                width: 300,
+                height: 200,
+                arrows: true,
+                buttons: true,
+                slideDistance: 5,
+                visibleSize: '100%',
+            });
+        });
+
+    </script>
+    <!--light_box2-->
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        })
+
+    </script>
+    <!--page_top-->
+    <script>
+        $(function() {
+            var topBtn = $('#page-top0');
+            topBtn.hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            topBtn.click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+
+    </script>
+    <!--スマホ用 ハンバーガーメニュー-->
+    <script>
+        $(document).ready(function() {
+            $("nav").naver({
+                labels: {
+                    closed: "MENU",
+                    open: "CLOSE"
+                },
+                maxWidth: "480px"
+            });
+        });
+
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-101885271-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 
-<body id="start">
-  <div class="start">
-    <img src="other/roading_anime3.gif" alt="rording_anime3">
-  </div>
-  <footer>
-    <small>Copyright &copy; 2018 ROUTE ZERO. All Rights Reserved.</small>
-  </footer>
+<body id="home">
+    <div id="wrapper">
+        <header>
+            <div class="address">
+                <h1>Tel.03-6264-7004</h1>
+                <p>東京都中央区銀座6-13-7 新保ビルB1</p>
+                <p>ランチ（月～金） 11:30～17:00</p>
+                <p>ディナー 　　　　17:00～04:00</p>
+            </div>
+            <!--end div.address-->
+            <div class="snsicon"> <a class="mail" href="contact.html">ルートゼロ・メール</a> <a class="twitter" href="https://twitter.com/zero_route" target="_blank">ルートゼロ・ツイッター</a> <a class="instagram" href="https://www.instagram.com/routezero.ginza/" target="_blank">ルートゼロ・インスタグラム</a> <a class="facebook" href="https://www.facebook.com/ROUTEZERO.ginza/" target="_blank">ルートゼロ・フェイスブック</a> </div>
+            <!--end div.snsicon-->
+            <div class="mainlogo">
+                <a href="index.html"> <img src="images/logo.png" alt="ROUTE ZERO"></a>
+            </div>
+            <!--end div.mainlogo-->
+        </header>
+        <main>
+            <div class="movie">
+                <section>
+                    <video src="other/RouteZero.mp4" autoplay loop> </video>
+                </section>
+                <section class="moviecomment">
+                    <p class="shopname">TABI × DINING
+                        <br>
+                        <span>ROUTE ZERO</span></p>
+                    <p class="shopcomment">世界一周から帰ってきたオーナーが
+                        <br> お届けする、
+                        <br> 国際色豊かなダイニングバー
+                        <br> 東銀座にオープン。
+                        <br> こだわりの料理やお酒、空間と共に
+                        <br> 特別な時間をお楽しみ下さい。 </p>
+                </section>
+                <nav class="navmenu">
+                    <ul>
+                        <li class="top_now"> <a href="index.html">ルートゼロ・トップ</a> </li>
+                        <li class="navicon concept"> <a href="concept.html">ルートゼロ・コンセプト</a> </li>
+                        <li class="navicon menu"> <a href="menu.html">ルートゼロ・メニュー</a> </li>
+                        <li class="navicon access"> <a href="access.html">ルートゼロ・アクセス</a> </li>
+                        <li class="navicon contact"> <a href="contact.html">ルートゼロ・コンタクト</a> </li>
+                        <li class="navicon recruit"> <a href="recruit.html">ルートゼロ・リクルート</a> </li>
+                        <li class="navicon game"> <a href="game.html">ルートゼロ・ゲーム</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--end div.movie-->
+            <div class="topic">
+                <section class="topic_logo"> <img src="images/topic.png" alt="topic_logo"> </section>
+                <section class="topic_map"> <img src="images/topic_map.png" alt="topic_map"> </section>
+                <section class="topic_comment">
+                    <dl class="comment_scroll">
+                        <dt>2017.07.06</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12290073640.html" target="_blank">【銀座ダイニングバー】一頭買い和牛肉バル・ルートゼロ☆人気のステーキ＆ローストビーフサラダ＆パスタ</a>
+                            <br>
+                        </dd>
+                        <dt>2017.07.05</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12289778141.html" target="_blank">【3時間飲み放題付】飲みメインの宴会コース ＜全8品＞銀座宴会☆オシャレに飲み会☆誕生日会☆歓送迎会</a>
+                            <br>
+                        </dd>
+                        <dt>2017.07.04</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12289474359.html" target="_blank">【3時間飲み放題付】広島産牡蠣のタジン鍋コース＜全8品＞銀座宴会・飲み会・誕生日会・歓送迎会</a>
+                            <br>
+                        </dd>
+                        <dt>2017.07.03</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12289412532.html" target="_blank">銀座肉バル個室【最大6名様】ちゃぶ台を囲んでパーティーを☆旅するダイニング・ルートゼロ</a>
+                            <br>
+                        </dd>
+                        <dt>2017.07.03</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12289390681.html" target="_blank">国産牛一頭買い 短角牛や美蘭牛など高級肉を低価格で味わえる肉バル！銀座の旅するダイニングルートゼロ</a>
+                            <br>
+                        </dd>
+                        <dt>2017.07.03</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12289164246.html" target="_blank">【3H飲み放題付】満足ROUTE ZEROコース＜全9品＞宴会・飲み会・誕生日会・歓送迎会</a>
+                            <br>
+                        </dd>
+                        <dt>2017.07.02</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12288851868.html" target="_blank">銀座シックスから徒歩1分の旅するダイニングバー☆世界のお酒を片手におしゃれに乾杯♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.07.01</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12288545190.html" target="_blank">【銀座】産地直送食材で高いコストパフォーマンス☆旅するダイニングバーROUTE ZERO☆</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.30</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12288243656.html" target="_blank">【銀座deパーティー】旬素材と肉好き女子会コース4,000円☆銀座シックスから徒歩１分☆ROUTE ZERO</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.29</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12287985271.html" target="_blank">【完全貸切】銀座で50名様までのパーティーや貸切もＯＫ！ウェディング二次会や異業種交流会に♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.29</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12287908269.html" target="_blank">【銘柄和牛ステーキ】ROUTE ZERO一番人気！和牛の旨味をシンプルに、そして大胆に味わうにはステーキがおすすめです。</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.29</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12287908041.html" target="_blank">【ランチ限定ローストビーフ丼】一頭買い和牛につや姫に九州醤油ベースの自家製たれ☆銀座ランチの新定番！</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.29</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12287907270.html" target="_blank">和牛一頭買いで驚きのコスパを実現！銀座肉バル・ルートゼロ TABI×DINING ROUTE ZERO</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.29</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12287902888.html" target="_blank">国産和牛一頭買い肉バルROUTE ZERO 東銀座徒歩3分 隠れ家 女子会 合コン パーティー世界11ヵ国のビール</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.29</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12287901082.html" target="_blank">銀座のオアシス☆お洒落カフェでソファデート☆旅するダイニング・ルートゼロ</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.25</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12286701537.html" target="_blank">世界一周を経験した旅の達人オーナーが相談に乗ります～夏休みの旅行の計画はダイニングバーで 来店客</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.24</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12286674926.html" target="_blank">旅好き集まれ！多国籍☆肉バル ホール＆キッチンスタッフ募集♪ 銀座ROUTE ZERO</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.24</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12286594543.html" target="_blank">夏休みの旅行の計画はダイニングバーで 来店客の「旅相談」予約開始 ～世界一周を経験した旅の達人オーナーが相談に乗ります～旅ダイニング・ルートゼロ</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.21</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12285809636.html" target="_blank">【3時間飲み放題付】肉好き女子会コース＜全9品＞ 4000円（1人様）銀座ルートゼロ 旅するダイ</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.21</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12285803104.html" target="_blank">国産牛一頭買い 短角牛や美蘭牛など高級肉を低価格で味わえる肉バル</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.10</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12282529041.html" target="_blank">【銀座】旅ダイニングバーROUTE ZEROの漁師直送広島産牡蠣のアヒージョ♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.09</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12282337768.html" target="_blank">【ソファ×個室×女子会】おしゃれな銀座のダイニングバー、ルートゼロで肉祭り♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.09</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12282323081.html" target="_blank">TABI×DINING 肉バル ROUTE ZERO 個室×女子会×ランチ×ローストビーフ丼×貸切</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.09</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12282309797.html" target="_blank">銀座ダイニングバーの質&コスパの良いお肉。絶品！雲丹のせローストビーフ丼♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.09</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12282307512.html" target="_blank">契約農家直送の新鮮な野菜が大人気！銀座ダイニングバーでおしゃれに女子会♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.09</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12282301267.html" target="_blank">【貸切】銀座のおしゃれな旅ダイニングで貸切パーティー（着席40名、立食50名）</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.09</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12282281627.html" target="_blank">銀座のおしゃれなダイニングバーで味わえる日米のクラフトビール♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.09</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12282279409.html" target="_blank">世界一周をしたオーナーのいる銀座のダイニングバー ROUTE ZERO</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.08</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12281757782.html" target="_blank">【期間延長】ローストビーフ&生ハムが食べ放題に! 銀座のダイニングで肉祭り開宴</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.07</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12281748277.html" target="_blank">【銀座ランチ】超お得！銘柄和牛の絶品ローストビーフ丼</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.07</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12281720589.html" target="_blank">銀座ルートゼロ、夏なんで「パクチー餃子」始めます！クラフトビールと一緒にどうぞ♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.03</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12280294773.html" target="_blank">【銀座ランチ】◎得！北十勝ファーム短角牛のローストビーフ丼（米はつや姫）</a>
+                            <br>
+                        </dd>
+                        <dt>2017.06.02</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12280245395.html" target="_blank">【好評につき延長】666円で生ハム＆ローストビーフが食べ放題！銀座『TABI✕DINING ROUTE ZERO』で肉祭り！</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.30</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12279354957.html" target="_blank">『銀座』こだわりの食材で世界中の料理を楽しめるダイニングバー♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.29</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12279053567.html" target="_blank">銀座で個室デート♩女子会にもおすすめのおしゃれな居酒屋ルートゼロ</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.23</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12277314340.html" target="_blank">♡5/31まで！肉祭りキャンペーン！♡〜タビ×ダイニング ルートゼロ〜</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.23</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12277291505.html" target="_blank">銀座の旅するダイニングバー✨「ルート・ゼロ」南国情緒あふれるオシャレな店内は女子会に最適♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.23</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12277280947.html" target="_blank">◆国産のブランド牛や広島産のかきなど素材にこだわる ◆ビールやカクテル、ワイン他、ドリンクが充実</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.19</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12275936959.html" target="_blank">銀座の一頭買い肉バル旅ダイニング、ルートゼロ！デートや女子会、会社宴会や合コンに♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.16</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12275055694.html" target="_blank">銀座駅より徒歩4分の場所にある『TABI✕DINING ROUTE ZERO』は銘柄和牛を1頭買いし、リーズナブルに質の良い牛肉を提供しているお店です。</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.16</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12275052662.html" target="_blank">666円で生ハム＆ローストビーフが食べ放題！銀座『TABI✕DINING ROUTE ZERO』</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.04</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12271685730.html" target="_blank">銀座のオシャレ肉バルで3時間飲み放題付きコース4000円〜</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.02</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12270979791.html" target="_blank">銀座で短角牛一頭買いの肉バル、人気のステーキ＆ローストビーフがおすすめ♪</a>
+                            <br>
+                        </dd>
+                        <dt>2017.05.01</dt>
+                        <dd><a href="http://ameblo.jp/route-zero-2017/entry-12270691219.html" target="_blank">銀座でおしゃれなランチ女子会！</a>
+                            <br>
+                        </dd>
+                    </dl>
+                    <!--end dl.comment_scroll-->
+                </section>
+                <section class="line_right"> <img src="images/line_right.png" alt="line"> </section>
+            </div>
+            <!--end article.tipic-->
+
+            <div class="lunch">
+                <section class="lunch_logo"> <img src="images/lunch.png" alt="lunch_logo"> </section>
+                <section class="lunch_photo"> <img src="images/lunch_photo.png" alt="lunch_photo"> </section>
+                <section class="lunch_comment">
+                    <p class="left_title">銘柄和牛の</p>
+                    <p class="right_title">ローストビーフ丼</p>
+                    <br>
+                    <br>
+                    <p>並　　　　￥1000
+                        <br> 大　　　　￥1500
+                        <br> 特大　　　￥2000 </p>
+                    <br>
+                    <p>☆和牛は一頭買いの
+                        <br> 北十勝ファーム短角牛
+                        <br> 福田フォーム美蘭牛
+                        <br> 中村牧場夢味牛
+                        <br> を使用しております。 </p>
+                    <br>
+                    <p class="right_small"><a href="menu.html" target="_blank">他のメニューを見る</a></p>
+                </section>
+                <div class="slider-pro" id="my-slider">
+                    <div class="sp-slides">
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_1.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_1.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_2.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_2.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_3.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_3.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_4.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_4.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_5.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_5.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_6.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_6.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_7.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_7.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_8.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_8.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_9.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_9.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_10.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_10.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/lunch/lunch_11.jpg" data-lightbox="lunch"> <img class="sp-image" src="photo/lunch/lunch_11.jpg" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end article.lunch-->
+            <div class="dinner1">
+                <section class="dinner_logo"> <img src="images/dinner.png" alt="dinner_logo"> </section>
+                <section class="dinner_photo1"> <img src="images/dinner_photo1.png" alt="dinner1_photo"> </section>
+                <section class="dinner_comment1">
+                    <p><span> 1頭買い国産ブランド牛 </span></p>
+                    <br>
+                    <br>
+                    <p class="left">銘柄ステーキ　　　　　￥1600/150g</p>
+                    <p class="right">￥3000/300g</p>
+                    <p class="left">茄子とぶつ切り和牛のボロネーゼ</p>
+                    <p class="right">￥1000</p>
+                    <p class="left">銘柄牛ローストビーフ カルパッチョ</p>
+                    <p class="right">￥1300</p>
+                    <p class="left">銘柄牛ローストビーフのサラダ仕立て</p>
+                    <p class="right">￥1100</p>
+                    <p class="left">銘柄牛ホルモン肉のトマト煮込み</p>
+                    <p class="right">￥650</p>
+                    <p class="left">シメのまかないビーフカレー</p>
+                    <p class="right">￥900</p>
+                </section>
+            </div>
+            <!--end div.dinner1-->
+            <div class="dinner2">
+                <section class="dinner_photo2"> <img src="images/dinner_photo2.png" alt="dinner2_photo"> </section>
+                <section class="dinner_comment2">
+                    <p><span> 漁師直送広島かき </span></p>
+                    <br>
+                    <br>
+                    <p class="left">広島産牡蠣のタジン鍋</p>
+                    <p class="right">￥1000～/2人前</p>
+                    <p class="left">広島産牡蠣のぺペロンチーノ</p>
+                    <p class="right">￥1100</p>
+                    <p class="left">広島産牡蠣のアヒージョ</p>
+                    <p class="right">￥900</p>
+                    <p class="left">広島産牡蠣のエスカルゴバター焼き</p>
+                    <p class="right">￥950</p>
+                </section>
+            </div>
+            <!--end div.dinner2-->
+            <div class="dinner3">
+                <section class="dinner_photo3"> <img src="images/dinner_photo3.png" alt="dinner3_photo"> </section>
+                <section class="dinner_comment3">
+                    <p class="left_title">契約農家直送</p>
+                    <p class="right_title">エロうま無農薬野菜</p>
+                    <br>
+                    <br>
+                    <p class="left">無農薬野菜のカプレーゼ</p>
+                    <p class="right">￥800</p>
+                    <p class="left">無農薬野菜とチーズのオーブン焼き</p>
+                    <p class="right">￥800</p>
+                    <p class="left">無農薬野菜のグリーンサラダ</p>
+                    <p class="right">￥700</p>
+                    <p class="left">季節の無農薬野菜のバーニャカウダ</p>
+                    <p class="right">￥1000</p>
+                    <br>
+                    <p class="right_small"><a href="menu.html#menupage_dinner" target="_blank">他のメニューを見る</a></p>
+                </section>
+                <div class="slider-pro2" id="my-slider2">
+                    <div class="sp-slides">
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_1.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_1.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_2.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_2.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_4.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_4.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_5.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_5.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_6.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_6.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_7.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_7.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_8.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_8.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_9.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_9.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_10.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_10.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_11.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_11.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_12.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_12.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_13.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_13.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_14.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_14.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_15.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_15.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_16.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_16.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_17.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_17.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_18.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_18.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_19.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_19.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_20.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_20.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_21.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_21.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_22.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_22.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_23.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_23.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_24.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_24.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_25.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_25.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/dinner/dinner_26.jpg" data-lightbox="dinner"> <img class="sp-image" src="photo/dinner/dinner_26.jpg" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end div.dinner3-->
+            <div class="drink">
+                <section class="drink_logo"> <img src="images/drink.png" alt="drink_logo"> </section>
+                <section class="drink_photo"> <img src="images/drink_photo.png" alt="drink_photo"> </section>
+                <section class="drink_comment">
+                    <p class="drink_title"><span class="drink_title1">日米のクラフトビール</span>
+                        <br>
+                        <span class="drink_title2">　　　　　＆　　　　　</span>
+                        <br>
+                        <span class="drink_title3"> 各国から取り揃えた豊富なお酒 </span></p>
+                    <br>
+                    <br>
+                    <p>ハートランド　　　　　　￥650</p>
+                    <p>よなよな　　　　　　　￥550/S</p>
+                    <p>　　　　　　　　　　　￥900/L</p>
+                    <p>ブルームーン　　　　　￥550/S</p>
+                    <p>　　　　　　　　　　　￥900/L</p>
+                    <br>
+                    <br>
+                    <p class="right_small"><a href="menu.html#menupage_drink" target="_blank">他のメニューを見る</a></p>
+                </section>
+                <div class="slider-pro3" id="my-slider3">
+                    <div class="sp-slides">
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_1.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_1.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_2.png" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_2.png" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_3.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_3.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_4.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_4.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_5.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_5.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_6.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_6.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_7.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_7.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_8.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_8.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_9.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_9.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/drink/drink_10.jpg" data-lightbox="drink"> <img class="sp-image" src="photo/drink/drink_10.jpg" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <section class="line_left"> <img src="images/line_left.png" alt="line"> </section>
+            </div>
+            <!--end div.drink-->
+            <div class="access_page">
+                <section class="access_page_logo"> <img src="images/access.png" alt="accesslogo"> </section>
+                <section class="facebook_plugin">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FROUTEZERO.ginza%2F%3Ffref%3Dts&tabs=timeline&width=400&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </section>
+                <section class="access_comment">
+                    <p><span>TABI×DINING  ROUTE ZERO</span></p>
+                    <br>
+                    <p>住所　◆　東京都中央区銀座6-13-7 新保ビルB1</p>
+                    <p>電話番号　◆　03-6264-7004</p>
+                    <p>営業時間　◆　ランチ(月〜金)　11:30〜17:00</p>
+                    <p>　　　　　　　ディナー　　　　17:00〜4:00</p>
+                    <p>定休日　◆　日曜</p>
+                    <p>　　　　　　※連休の場合、連休の最終日が定休日</p>
+                    <p>最寄り駅　◆　銀座駅・東銀座駅</p>
+                    <p>パーキング　◆　目の前に有料パーキングあり</p>
+                    <p>備考　◆　お子様連れ大歓迎！イベントあり</p>
+                </section>
+                <div class="slider-pro4" id="my-slider4">
+                    <div class="sp-slides">
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_1.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_1.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_2.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_2.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_3.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_3.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_4.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_4.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_5.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_5.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_6.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_6.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_7.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_7.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_8.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_8.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_9.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_9.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_10.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_10.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_11.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_11.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_12.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_12.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_13.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_13.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_14.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_14.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_15.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_15.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_16.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_16.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_17.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_17.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_18.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_18.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_19.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_19.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_20.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_20.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_21.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_21.jpg" alt="#"></a>
+                        </div>
+                        <div class="sp-slide">
+                            <a href="photo/shop/shop_22.jpg" data-lightbox="shop"> <img class="sp-image" src="photo/shop/shop_22.jpg" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <section class="googlemap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3327313531927!2d139.76273431493908!3d35.668808338261236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be7a6046087%3A0xede431efbf4b858f!2zUk9VVEUgWkVSTyBUQUJJIERJTklORyDml4Xjg4DjgqTjg4vjg7PjgrAg44Or44O844OI44O744K844Ot!5e0!3m2!1sja!2sjp!4v1496684490116" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+                <section class="line_right2"> <img src="images/line_right.png" alt="line"> </section>
+            </div>
+            <!--end div.access_page-->
+            <div class="pagetop">
+                <p id="page-top0"><a href="#wrap">PAGE<br>TOP</a></p>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_snsicon"> <a class="footer_facebook" href="https://www.facebook.com/ROUTEZERO.ginza/" target="_blank">routezero_facebook</a> <a class="footer_instagram" href="https://www.instagram.com/routezero.ginza/" target="_blank">routezero_instagram</a> <a class="footer_twitter" href="https://twitter.com/zero_route" target="_blank">routezero_twitter</a> <a class="footer_mail" href="contact.html">routezero_mail</a> </div>
+            <small>Copyright &copy; 2018 ROUTE ZERO. All Rights Reserved.</small> </footer>
+    </div>
+    <!--end div#wrapper-->
 </body>
 
 </html>
