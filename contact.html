@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>旅×ﾀﾞｲﾆﾝｸﾞ ﾙｰﾄｾﾞﾛ</title>
+    <meta name="description" content="世界一周から帰ってきたオーナーがお届けする、国際色豊かなダイニングバー。東銀座・銀座駅より徒歩５分圏内。1頭買い国産ブランド牛、漁師直送広島産カキ、契約農家直送エロうま無農薬野菜、日米のクラフトビール＆世界各国から取り揃えた豊富なお酒と共に、味覚の旅へお連れいたします。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="other/favicon.ico">
+    <script type="text/javascript" src="other/jquery-3.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="nav_menu/jquery.fs.naver.css">
+    <script src="nav_menu/jquery.fs.naver.js"></script>
+    <!--スマホ用 ハンバーガーメニュー-->
+    <script>
+        $(document).ready(function() {
+            $("nav").naver({
+                labels: {
+                    closed: "MENU",
+                    open: "CLOSE"
+                },
+                maxWidth: "480px"
+            });
+        });
+
+    </script>
+    <script>
+        alert('こちらのフォームは店舗に送信されません。公式サイト(http://routezero.jp/)または電話のご利用をお願い致します。');
+
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-101885271-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body id="contactpage">
+    <div id="wrapper">
+        <header>
+            <div class="address">
+                <h1>Tel.03-6264-7004</h1>
+                <p>東京都中央区銀座6-13-7 新保ビルB1</p>
+                <p>ランチ（月～金） 11:30～17:00</p>
+                <p>ディナー 　　　　17:00～04:00</p>
+            </div>
+            <!--end div.address-->
+            <div class="snsicon">
+                <a class="mail" href="contact.html">routezero_mail</a>
+                <a class="twitter" href="https://twitter.com/zero_route" target="_blank">routezero_twitter</a>
+                <a class="instagram" href="https://www.instagram.com/routezero.ginza/" target="_blank">routezero_instagram</a>
+                <a class="facebook" href="https://www.facebook.com/ROUTEZERO.ginza/" target="_blank">routezero_facebook</a>
+            </div>
+            <!--end div.snsicon-->
+            <div class="mainlogo">
+                <a href="index_top.html"> <img src="images/logo.png" alt="ROUTE ZERO"></a>
+            </div>
+            <!--end div.mainlogo-->
+            <div class="line">
+                <img src="images/line_only.png" alt="line_only">
+            </div>
+            <!--end div.line-->
+        </header>
+        <main>
+            <nav class="navmenu_bottom">
+                <ul>
+                    <li class="top">
+                        <a href="index_top.html">routezero_navitop</a>
+                    </li>
+                    <li class="navicon concept">
+                        <a href="concept.html">routezero_concept</a>
+                    </li>
+                    <li class="navicon menu">
+                        <a href="menu.html">routezero_menu</a>
+                    </li>
+                    <li class="navicon access">
+                        <a href="access.html">routezero_access</a>
+                    </li>
+                    <li class="navicon contact_now">
+                        <a href="contact.html">routezero_contact</a>
+                    </li>
+                    <li class="navicon recruit">
+                        <a href="recruit.html">routezero_recruit</a>
+                    </li>
+                    <li class="navicon game">
+                        <a href="game.html">routezero_game</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--end nav-->
+            <div id="contact">
+                <div class="contactpage_logo">
+                    <img src="images/contactpage_contact.png" alt="contact_logo">
+                    <img src="images/contactpage_resevation.png" alt="resevation_logo">
+                </div>
+                <div class="contact_comment">
+                    <p class="contact_message">【電話でのご予約＆お問い合わせ】</p>
+                    <p class="contact_tel">03-6264-7004</p>
+                    <br>
+                    <p class="contact_message">【ご予約＆お問い合わせフォーム】</p>
+                    <div class="contact_form">
+                        <form action="confirmation.php" method="post">
+                            <table>
+                                <tr>
+                                    <td class="name">
+                                        <p>ご用件選択<span>
+                      <br>※必須</span>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <label>
+                      <input type="radio" name="contact_name" value="予約" required>
+                      <p class="radio_left">予約</p>
+                    </label>
+                                        <label>
+                      <input type="radio" name="contact_name" value="求人応募/問い合わせ">
+                      <p class="radio_left">求人応募/問い合わせ</p>
+                    </label>
+                                        <label>
+                      <input type="radio" name="contact_name" value="その他の問い合わせ">
+                      <p class="radio_left">その他の問い合わせ</p>
+                    </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name">
+                                        <p>お名前</p><span>※必須</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="user_name" placeholder="カタカナ" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name">
+                                        <p>メールアドレス</p><span>※必須</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="user_address" placeholder="例：route_zero@sample.jp" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name">
+                                        <p>お電話番号</p><span>※必須</span>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="user_tel" placeholder="例：080-1234-5678" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name">
+                                        <p>お問い合わせ内容</p>
+                                    </td>
+                                    <td>
+                                        <textarea name="user_message" rows="4">
+                    </textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="resevation_comment">↓↓　ご予約のお客様は、下記の記入もお願い致します　↓↓</p>
+                            <table>
+                                <tr>
+                                    <td class="name_rv">
+                                        <p>ご希望の日時</p>
+                                    </td>
+                                    <td>
+                                        <input type="datetime-local" name="datetime">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name_rv">
+                                        <p>ご利用人数</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <input type="number" name="number" min="1" max="40">名様</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name_rv">
+                                        <p>ご希望のコース</p>
+                                    </td>
+                                    <td>
+                                        <select name="course" size="1">
+                      <option value="未定">未定</option>
+                      <option value="【3時間飲放題付コース】飲みメインの宴会コース">【3時間飲放題付コース】飲みメインの宴会コース</option>
+                      <option value="【3時間飲み放題付きコース】広島産牡蠣のタジン鍋コース">【3時間飲み放題付きコース】広島産牡蠣のタジン鍋コース</option>
+                      <option value="【3時間飲放題付コース】満足ROUTE ZEROコース">【3時間飲放題付コース】満足ROUTE ZEROコース</option>
+                      <option value="【3時間飲放題付】最強ROUTE ZEROコース">【3時間飲放題付】最強ROUTE ZEROコース</option>
+                    </select>
+                                        <br>
+                                        <p class="course_select">※コースの詳しい内容は<a href="menu.html#menupage_course" target="_blank">こちら</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="bottom">
+                                <input id="bottom" type="submit" value="確認ページへ">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--end .contact_comment-->
+                <section class="line_right7">
+                    <img src="images/line_right.png" alt="line_right">
+                </section>
+            </div>
+            <!--end #contactpage-->
+        </main>
+        <footer class="footer_bottom">
+            <div class="footer_snsicon"> <a class="footer_facebook" href="https://www.facebook.com/ROUTEZERO.ginza/" target="_blank">routezero_facebook</a> <a class="footer_instagram" href="https://www.instagram.com/routezero.ginza/" target="_blank">routezero_instagram</a> <a class="footer_twitter" href="https://twitter.com/zero_route" target="_blank">routezero_twitter</a> <a class="footer_mail" href="contact.html">routezero_mail</a> </div>
+            <small>Copyright &copy; 2017 ROUTE ZERO. All Rights Reserved.</small>
+        </footer>
+    </div>
+    <!--end div#wrapper-->
+</body>
+
+</html>
