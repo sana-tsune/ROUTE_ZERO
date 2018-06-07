@@ -1,0 +1,445 @@
+@charset "utf-8";
+
+/*----------------------------------------------
+variable
+----------------------------------------------*/
+@mixin color-key{
+  color: yellow;
+  background: -webkit-linear-gradient(orangered, yellow, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+$color-key: yellow;
+$color-sub: #5edefb;
+$color-base: #fff;
+
+$fs-base:30px;
+$fc-base:#fff;
+$ff-base:'Open Sans', "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$lh:1.5;
+$text-mb:15px;
+
+$site-width:1200px;
+$glid-space:15px;
+$maxcol:12;
+$glid-width: $site-width + $glid-space * 2;
+
+
+@mixin mq_tablet{
+  @media (max-width: $site-width - 1){
+    @content;
+  }
+}
+@mixin mq_1024{
+  @media (max-width: 1024px){
+    @content;
+  }
+}
+@mixin mq_sp{
+  @media (max-width: 767px){
+    @content;
+  }
+}
+
+
+/*-------フォント＆リセットCSS--------*/
+
+@font-face {
+  font-family: 'MyFont';
+  src: url(../font/coopbl-webfont.woff);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: MyFont;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------
+SCSS
+----------------------------------------------*/
+
+body {
+background: $color-base;
+}
+
+html, body, #wrapper {
+  height: 100%;
+	min-height: 100%;
+}
+#wrapper {
+  z-index: 1;
+  background: $color-base;
+  margin: 0 auto;
+  width: $site-width;
+  height: auto;
+  background: url(../images/back_ground.jpg) top center repeat-y;
+  @include mq_tablet{
+    width: 100%;
+  }
+}
+/*---------cursor----------*/
+.mainlogo a,
+.snsicon a,
+li a,
+.footer_snsicon a {
+  cursor: url(../images/cursor.png) , default
+}
+
+.mainlogo a:active,
+.snsicon a:active,
+li a:active,
+.footer_snsicon a:active {
+  cursor: url(../images/cursor_click.png) , default;
+}
+
+/*------▼▼images & button & link▼▼-----*/
+figure {
+  margin: 0 0 $text-mb;
+  @include mq_sp{
+    width: 100% !important;
+    text-align: center;
+  }
+}
+figcaption {
+  margin-top: 5px;
+  font-size: $fs-base * 0.857;
+  color: $fc-base;
+}
+img {
+	max-width: 100%;
+	height: auto;
+  vertical-align: bottom;
+}
+.btn.focus, .btn:focus, .btn:hover {
+  outline: none;
+}
+a, a img, button {
+  transition: all 0.2s ease-out 0s;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    color: $color-sub;
+    img {
+      opacity: .8;
+    }
+  }
+  &:link {
+    color: $fc-base;
+  }
+}
+
+/*------▼▼nav▼▼-----*/
+.horizontalMenu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  flex-shrink: 0;
+  @include mq_sp{
+    position: relative;
+  }
+}
+
+/*------▼▼font▼▼-----*/
+  h1, h2, h3, h4, h5, h6 {
+    margin: $text-mb * 2 0;
+    font-weight: 600;
+    line-height: $lh;
+  }
+  h1 {
+    font-size: $fs-base * 1.875;
+    @include mq_tablet{
+      font-size: $fs-base * 1.75;
+    }
+    @include mq_sp{
+      font-size: $fs-base * 1.625;
+    }
+  }
+  h2 {
+    font-size: $fs-base * 1.75;
+    @include mq_tablet{
+      font-size: $fs-base * 1.625;
+    }
+    @include mq_sp{
+      font-size: $fs-base * 1.5;
+    }
+  }
+  h3 {
+    font-size: $fs-base * 1.625;
+		@include mq_tablet{
+			font-size: $fs-base * 1.5;
+		}
+		@include mq_sp{
+			font-size: $fs-base * 1.375;
+		}
+  }
+  h4 {
+    font-size: $fs-base * 1.5;
+		@include mq_tablet{
+			font-size: $fs-base * 1.375;
+		}
+		@include mq_sp{
+			font-size: $fs-base * 1.25;
+		}
+  }
+  h5 {
+    font-size: $fs-base * 1.375;
+		@include mq_tablet{
+			font-size: $fs-base * 1.25;
+		}
+		@include mq_sp{
+			font-size: $fs-base * 1.125;
+		}
+  }
+  h6 {
+    font-size: $fs-base * 1.25;
+		@include mq_tablet{
+			font-size: $fs-base * 1.125;
+		}
+		@include mq_sp{
+			font-size: $fs-base;
+		}
+  }
+  p {
+    margin: $text-mb 0;
+    font-size: $fs-base;
+    color: $fc_base;
+  }
+
+/*------▼▼list▼▼-----*/ 
+ul, ol {
+    margin: $text-mb 0;
+  }
+  ul li {
+    list-style-type: none;
+    font-size: $fs-base;
+    a {
+  text-decoration: none;
+  &:link {
+    color: $fc-base;
+  }
+  &:hover {
+    color: $color-sub;
+    img {
+      opacity: .8;
+    }
+  }
+}
+}
+
+/*-----▼▼other▼▼-----*/
+hr {
+  border: 0;
+  border-bottom: 1px solid $fc_base;
+  margin: 2rem 0;
+  height: 0;
+  clear: both;
+}
+.lead {
+    font-size: $fs-base * 1.125;
+  }
+  .alignleft {
+    margin-right: $glid-space;
+    float: left;
+    @include mq_sp{
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+  }
+  .alignright {
+    margin-left: $glid-space;
+    float: right;
+    @include mq_sp{
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+  }
+  .aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+address{
+  color: $fc-base;
+  text-align:center;
+  font-size:12px;
+  font-style:normal;
+  padding:30px 0 20px;
+}
+
+/*----------------------------------------------
+module
+----------------------------------------------*/
+.marg0 { margin:0 !important; }
+.padd0 { padding:0 !important; }
+
+.mb0 { margin-bottom: 0 !important; }
+.mb10 { margin-bottom: 10px !important; }
+.mb15 { margin-bottom: 15px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb30 { margin-bottom: 30px !important; }
+.mb40 { margin-bottom: 40px !important; }
+.mb50 { margin-bottom: 50px !important; }
+.mb60 { margin-bottom: 60px !important; }
+.mb70 { margin-bottom: 70px !important; }
+.mb80 { margin-bottom: 80px !important; }
+.mb90 { margin-bottom: 90px !important; }
+.mb100 { margin-bottom:100px !important; }
+
+.mt0 { margin-top:0 !important; }
+
+.txtRed { color: #F00; }
+.txtLeft { text-align: left; }
+.txtCenter { text-align: center; }
+.txtRight { text-align: right; }
+
+.pconly {
+  display: block !important;
+  @include mq_sp{
+    display: none !important;
+  }
+}
+.sponly {
+  display: none !important;
+  @include mq_sp{
+    display: block !important;
+  }
+}
+.btn {
+  padding: 8px 10px;
+  background: #eee;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+	display: inline-block;
+  &:hover, &:focus {
+    opacity: .5;
+    cursor: pointer;
+  }
+  &.btnKey {
+    background: $color-key;
+    color: #fff;
+  }
+  &.btnSub {
+    background: $color-sub;
+    color: #fff;
+  }
+}
+/*----------------------------------------------
+Form
+----------------------------------------------*/
+form, .form {
+	.sizeXS { max-width:80px; }
+	.sizeS { max-width:150px; }
+	.sizeM { max-width:300px; }
+	.sizeL { max-width:500px; }
+	.sizeXL{ max-width:100%; }
+	.required { color: #F00; }
+	input[type="text"], input[type="email"], input[type="password"], textarea, select,input[type=datetime-local] {
+		width:100% !important;
+		display: block;
+		height: 34px;
+		padding: 6px 12px;
+		font-family: $ff-base;
+		font-size: 25px;
+		line-height: 1.42857143;
+		color: #555;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	}
+	textarea{
+		height:auto;
+	}
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+		width:100%;
+    font-size: $fs-base;
+    font-family: $ff-base;
+    @include mq_sp{
+      margin-bottom: 5px;
+    }
+	}
+}
+
+/*----------------------------------------------
+grid
+----------------------------------------------*/
+.container {
+	width: $site-width;
+	margin-left: auto;
+	margin-right: auto;
+  @include mq_tablet{
+    width: 100%;
+  }
+  /*@include mq_sp{
+    padding-left: $glid-space;
+    padding-right: $glid-space;
+  }*/
+}
+.row {
+	margin-left: -$glid-space;
+	margin-right: -$glid-space;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  &.flexCenter {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  &.vCenter {
+    align-items: center;
+  }
+}@mixin column($col){
+  width: 100% / $maxcol * $col;
+}
+@for $i from 1 through $maxcol {
+  .col-#{$i} {
+    @include column($i);
+		padding-left: $glid-space;
+		padding-right: $glid-space;
+		float: left;
+		@include mq_sp{
+			width: 100%;
+		}
+  }
+}
+@mixin offset($col) {
+	margin-left: 100% - (100% / $maxcol * $col);
+}
+@for $i from $maxcol - 1 through 1 {
+	.col-offset-#{$maxcol - $i}{
+		@include offset($i);
+		@include mq_sp{
+			margin-left: 0;
+		}
+	}
+}
+@for $i from 1 through $maxcol {
+	.order#{$i} {
+		order: $i;
+    @include mq_sp {
+      order: 0;
+    }
+	}
+}
+div[class*="col-"] *:first-child {
+  margin-top: 0;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
